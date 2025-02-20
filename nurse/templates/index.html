@@ -1,47 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hospital Home Page</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="../../static/styles/style.css">
-    <link rel="stylesheet" href="../../static/styles/bootstrap/css/bootstrap.css">
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
 
-</head>
-<body>
-    <header>
-        <h1>Welcome to stJoseph Hospital</h1>
-        <p>Providing Quality Healthcare Since 1990</p>
-    </header>
-<nav class="navbar navbar-expand-sm navbar-dark btn btn-primary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">stJoseph Hospital</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">AboutUS</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Gallery</a>
-        </li>
-        <li>
-           <a class="nav-link" href="javascript:void(0)">ContactUs</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+
+{% block content %}
+
+
 <div class="home">
  <div id="textCarousel" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
@@ -95,11 +58,5 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </div>
-    <footer>
-        <div>
-          <p>&copy; 2025 stJoseph Hospital. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="../../static/styles/bootstrap/js/bootstrap.js"></script>
-</body>
-</html>
+
+{% endblock %}
